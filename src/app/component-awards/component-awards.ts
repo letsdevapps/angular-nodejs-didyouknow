@@ -4,22 +4,22 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 @Component({
-	selector: 'app-component-didyouknow',
+	selector: 'app-component-awards',
 	imports: [CommonModule, RouterModule],
-	templateUrl: './component-didyouknow.html',
-	styleUrl: './component-didyouknow.css',
+	templateUrl: './component-awards.html',
+	styleUrl: './component-awards.css',
 	standalone: true,
 })
-export class ComponentDidyouknow implements OnInit {
+export class ComponentAwards implements OnInit {
 
-	didyouknowList: any[] = [];  // Array para armazenar os dados
+	awardsList: any[] = [];  // Array para armazenar os dados
 
 	constructor(private apiService: ServiceDidyouknowApi) { }
 
 	ngOnInit(): void {
 		// Chama o método do serviço para buscar a lista
-		this.apiService.getDidYouKnowList().subscribe(data => {
-			this.didyouknowList = data;  // Preenche a lista com os dados do backend
+		this.apiService.getAwardsList().subscribe(data => {
+			this.awardsList = data;  // Preenche a lista com os dados do backend
 		});
 	}
 }

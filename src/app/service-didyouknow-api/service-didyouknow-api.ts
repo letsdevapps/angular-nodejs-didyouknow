@@ -14,4 +14,16 @@ export class ServiceDidyouknowApi {
 	getDidYouKnowList(): Observable<any[]> {
 		return this.http.get<any[]>(`${this.baseUrl}/didyouknow/all`);
 	}
+
+	getDidYouKnowRandom(): Observable<any[]> {
+		return this.http.get<any[]>(`${this.baseUrl}/didyouknow/random`);
+	}
+
+	getAwardsList(): Observable<any[]> {
+		return this.http.get<any[]>(`${this.baseUrl}/awards/all`);
+	}
+
+	getAwardsRandom(): Observable<any[]> {
+		return this.http.get<any[]>(`${this.baseUrl}/awards/random`);
+	}
 }

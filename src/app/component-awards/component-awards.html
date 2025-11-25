@@ -1,12 +1,12 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-<!-- <p>component-didyouknow works! -->
+<!-- <p>component-awards works!</p> -->
 <!-- <i class="fas fa-smile fa-3x" style="color: #ffcc00; background-color: #000; padding: 1px; border-radius: 50%;"></i> -->
 <!-- </p> -->
 
 <div class="w3-card">
-  <div *ngFor="let d of didyouknowList" style="padding: 10px;">
-    <span style="font-weight: bold;">{{ d.title }}</span>: <span>{{ d.text }}</span>
+  <div *ngFor="let d of awardsList" style="padding: 10px;">
+    <span style="font-weight: bold;">{{ d.author }}</span>, <span>{{ d.year }}</span>: <span>{{ d.title }}</span>
   </div>
 </div>
